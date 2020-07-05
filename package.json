@@ -36,9 +36,7 @@
     }
   },
   "lint-staged": {
-    "**/*": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "*.js": "eslint \"src/\" --cache --fix --format table",
+    "*.{js,css,md}": "prettier --write"
   }
 }
